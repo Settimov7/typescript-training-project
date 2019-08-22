@@ -1,9 +1,9 @@
-import {User} from "./models/user";
+import { User } from "./models/user";
 
-const user = new User({name: 'myName', age: 20});
+const user = new User({ name: 'myName', age: 20 });
 
-user.set({name: 'newName'});
+user.on('click', () => {});
+user.on('adas', () => {});
 
-console.log(user.get('name'));
-console.log(user.get('age'));
+console.log(user);
 
