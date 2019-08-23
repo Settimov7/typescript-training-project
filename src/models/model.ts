@@ -34,17 +34,11 @@ export class Model<T extends HasId> {
 	) {
 	}
 	
-	get on() {
-		return this.events.on;
-	}
+	on = this.events.on;
 	
-	get trigger() {
-		return this.events.trigger;
-	}
+	trigger = this.events.trigger;
 	
-	get get() {
-		return this.attributes.get;
-	}
+	get = this.attributes.get;
 	
 	set = (value: T): void => {
 		this.attributes.set(value);
