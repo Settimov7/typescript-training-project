@@ -4,7 +4,7 @@ export class Attributes<T> {
 	
 	get = <K extends keyof T>(key: K): T[K] => this.data[key];
 	
-	set = (newProps: T): void => Object.assign(this.data, newProps);
+	set = (value: T): void => Object.assign(this.data, value);
 	
 	getAll = (): T => this.data;
 }
