@@ -1,11 +1,8 @@
+import { UserForm } from './views/user-form';
 import { User } from './models/user';
 
-const users = User.buildCollection();
+const user = User.build({ name: 'userName', age: 24 });
+const rootElement = document.getElementById('root');
+const userForm = new UserForm(rootElement, user);
 
-users.on('change', () => {
-	console.log(users);
-});
-
-users.fetch();
-
-
+userForm.render();

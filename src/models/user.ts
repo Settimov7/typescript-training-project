@@ -22,5 +22,11 @@ export class User extends Model<Props> {
 	);
 	
 	static buildCollection = () => new Collection<User, Props>(ROOT_URL, User.deserialize);
+	
+	setRandomAge = (): void => {
+		const age = Math.round(Math.random() * 100);
+		
+		this.set({ age });
+	}
 }
 
