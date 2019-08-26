@@ -7,4 +7,5 @@ Training project from course: https://www.udemy.com/typescript-the-complete-deve
 For start this project, you need run this commands:  
 
   - npm i
-  - parcel index.html
+  - npm run start:db
+  - npm run start:parcel
