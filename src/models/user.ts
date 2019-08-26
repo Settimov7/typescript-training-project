@@ -4,7 +4,7 @@ import { ApiSync } from './api-sync';
 import { Eventing } from './eventing';
 import { Collection } from './collection';
 
-interface Props {
+export interface Props {
 	id?: number;
 	name?: string;
 	age?: number;
