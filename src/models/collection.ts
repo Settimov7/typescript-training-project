@@ -26,9 +26,9 @@ export class Collection<T, K> {
 					const data = this.deserialize(json);
 					
 					this.models.push(data);
-				})
+				});
+				
+				this.trigger('change');
 			});
-		
-		this.trigger('change');
 	}
 }
